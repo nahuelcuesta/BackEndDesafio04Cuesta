@@ -33,7 +33,7 @@ router.post('/:cid/products/:pid', async (req, res) =>{
     try {
         const AddProduct = await cManager.addProductToCart(cartId,prodId);
         console.log(AddProduct);
-        res.status(200).json({message:`producto con id ${prodId} agregado exitosamente en el cattiro con ir: ${cartId}`, data: AddProduct })
+        res.status(200).json({message:`producto con id ${prodId} agregado exitosamente en el cattiro con id: ${cartId}`, data: AddProduct })
     } catch (error) {
         console.log('error al agregar el producto', error);
         res.status(500).json({message:`error al agregar el producto`, error: error.message})

@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+h1{
+    color:white;
+}
+.containerPrincipal{
+    color:brown;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    gap: 2rem;
+    padding: 2rem;
+}
+.containerProductos{
+    min-width: 200px;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

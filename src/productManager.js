@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from "uuid";
 
 class ProductManager {
     constructor() {
-        this.path = "./listaDeProductos.json";
+        this.path = "./src/listaDeProductos.json";
         this.products = [];
         this.loadProducts();
     }
@@ -28,9 +28,6 @@ class ProductManager {
         category
     ) => {
         try {
-        /* const lastProduct = this.products[this.products.length - 1];
-        const lastProductId = lastProduct ? lastProduct.id : 0;
-        const newProductId = lastProductId + 1; */
         const newProductId = uuidv4();
         let newProduct = {
             id: newProductId,

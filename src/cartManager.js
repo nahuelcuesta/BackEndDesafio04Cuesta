@@ -7,7 +7,7 @@ const pManager = new ProductManager;
 class CartManager {
     constructor(){
         this.carts = [],
-        this.path = "./listaDeCarritos.json"
+        this.path = "./src/listaDeCarritos.json"
         this.loadCarts();
     }
     async loadCarts() {
